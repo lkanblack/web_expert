@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web expert</title>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet"> 
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="descr">
+                    <div class="descr-title">Quam Tristique Condimentum</div>
+                    <p class="descr-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <a href="#">Curabitur blandit</a> tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
+                    <p></p>
+                    <div class="descr_body">
+                        <div class="descr_body-text">
+                            <h2>Fringilla Euismod Adipiscing Ipsum</h2>
+                            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Aenean lacinia bibendum nulla sed.</p>
+                            <ul>
+                                <li>Tellus Ullamcorper Inceptos</li>
+                                <li>Magna Condimentum</li>
+                                <ul>
+                                    <li>Mattis Tristique</li>
+                                    <li>Pharetra Pellentesque Dapibus</li>
+                                </ul>
+                                <li>Tellus Ullamcorper Inceptos</li>
+                                <li>Magna Condimentum</li>
+                            </ul>
+                        </div>
+                        <div class="descr_body-img">
+                            <img src="./img/descr_img.svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="calculator">
+                    <div class="calculator_block">
+                        <h3>Compensation Calculator</h3>
+                        <form>
+                            <span>Average income</span>
+                            <input type="text" name="" id="income" placeholder="1500">
+                            <span>Days on sick-leave</span>
+                            <input type="text" name="" id="days" placeholder="7">
+                            <div>
+                                <input type="checkbox" id="tubercolosis" name="tubercolosis">
+                                <label for="tubercolosis">I have tubercolosis</label>
+                            </div>
+                            <button id="calculate">Calculate</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="calculator_block compensations">
+                        <div class="compensations_block">
+                            <div class="bold">The employer compensates <div><span class="employer-days-compensation">0</span> days</div> </div>
+                            <h3 class="price"><div class="employer-compensation">0,00</div> €</h3>
+                            <p class="daily ">Daily allowance <span class="daily_employer">0,00</span> €</p>
+                        </div>
+                        <div class="compensations_block">
+                            <div class="bold">Health Insurance compensates <div><span class="health-days-compensation">0</span> days</div> </div>
+                            <h3 class="price"><div class="health-compensation">0,00</div> €</h3>
+                            <p class="daily">Daily allowance <span class="daily_health">0,00</span> €</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="calculator_block total">
+                        <p>Compensation total for 7 days (net)</p>
+                        <h4 class="total-price">112,00 €</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

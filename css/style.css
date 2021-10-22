@@ -1,0 +1,187 @@
+body {
+  min-height: 100vh;
+  height: auto;
+  background: -webkit-gradient(linear, left top, right top, from(#2B303A), to(#3F4756));
+  background: linear-gradient(90deg, #2B303A 0%, #3F4756 100%);
+  color: #FFFFFF;
+  font-family: 'Sora', sans-serif;
+}
+
+body p, body ul {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.container {
+  margin: 100px;
+}
+
+.descr-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.descr-text a {
+  color: #e1261c;
+  text-decoration: underline;
+}
+
+.descr_body {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.descr_body-text h2 {
+  margin-bottom: 20px;
+}
+
+.descr_body-text p {
+  margin-bottom: 20px;
+}
+
+.descr_body-img img {
+  border-radius: 4px;
+}
+
+.calculator {
+  background-color: #FFFFFF;
+  width: 320px;
+  color: #111317;
+  padding: 80px 0px;
+}
+
+.calculator .employer-compensation, .calculator .health-compensation {
+  display: inline;
+}
+
+.calculator h3 {
+  line-height: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.calculator p, .calculator span {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.calculator_block {
+  padding: 0 20px;
+}
+
+.calculator hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #E9EDF4;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.calculator form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.calculator form span {
+  margin-bottom: 5px;
+}
+
+.calculator form input {
+  border-image-source: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  border-width: 2pt;
+  border-image-slice: 1;
+  -webkit-box-shadow: 0px 2px 4px 0px #0000001A;
+          box-shadow: 0px 2px 4px 0px #0000001A;
+}
+
+.calculator form button {
+  width: 169px;
+  height: 60px;
+  border-radius: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#911812), to(#E1261C));
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+}
+
+.calculator form button span {
+  text-shadow: 2px 2px 0px 0px #00000066;
+}
+
+.calculator .compensations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.calculator .compensations .daily_health, .calculator .compensations .daily_employer {
+  display: inline;
+}
+
+.calculator .compensations p {
+  line-height: 15px;
+  margin: 0;
+}
+
+.calculator .compensations_block .bold {
+  font-weight: 700;
+  display: block;
+  line-height: 20px;
+}
+
+.calculator .compensations_block .bold span {
+  font-weight: 700;
+  display: inline;
+}
+
+.calculator .compensations_block h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.calculator .compensations_block .price {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+.calculator .compensations_block span {
+  font-weight: 700;
+  display: block;
+  line-height: 20px;
+}
+
+.calculator .compensations_block .daily {
+  color: #7A818E;
+}
+
+.calculator .total {
+  text-align: center;
+}
+
+.calculator .total p {
+  line-height: 15px;
+  margin: 5px 0px;
+}
+
+.calculator .total h4 {
+  font-weight: 700;
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

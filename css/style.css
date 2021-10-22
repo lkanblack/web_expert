@@ -47,6 +47,32 @@ body p, body ul {
   margin-bottom: 20px;
 }
 
+.descr_body-text ul li {
+  list-style: none;
+  position: relative;
+}
+
+.descr_body-text ul li::before {
+  content: "-";
+  font-weight: 700;
+  vertical-align: initial;
+  line-height: 30px;
+  font-size: 24px;
+  position: absolute;
+  left: -20px;
+  background: -webkit-gradient(linear, left top, right top, from(#911812), to(#E1261C));
+  background: linear-gradient(90deg, #911812 0%, #E1261C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.descr_body-text ul .grey::before {
+  background: -webkit-gradient(linear, left top, right top, from(#D3DAE8), to(#A7B7D8));
+  background: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .descr_body-img img {
   border-radius: 4px;
 }
@@ -60,6 +86,10 @@ body p, body ul {
 
 .calculator .employer-compensation, .calculator .health-compensation {
   display: inline;
+}
+
+.calculator .lh15 {
+  line-height: 15px;
 }
 
 .calculator h3 {
@@ -141,7 +171,7 @@ body p, body ul {
 
 .calculator .compensations_block .bold {
   font-weight: 700;
-  display: block;
+  display: inline;
   line-height: 20px;
 }
 
@@ -171,6 +201,10 @@ body p, body ul {
   color: #7A818E;
 }
 
+.calculator .compensations_block .daily .daily_employer, .calculator .compensations_block .daily .daily_health {
+  font-weight: 400;
+}
+
 .calculator .total {
   text-align: center;
 }
@@ -183,5 +217,10 @@ body p, body ul {
 .calculator .total h4 {
   font-weight: 700;
   margin: 0;
+  font-size: 24px;
+}
+
+.calculator .total .final-price {
+  display: inline;
 }
 /*# sourceMappingURL=style.css.map */

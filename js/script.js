@@ -9,6 +9,9 @@ let employer_daily = document.querySelector('.daily_employer');
 let health_days_compensation = document.querySelector('.health-days-compensation');
 let health_compensation = document.querySelector('.health-compensation');
 let health_daily = document.querySelector('.daily_health');
+// TOTAL
+let total_days = document.querySelector('.total-days');
+let final_price = document.querySelector('.final-price');
 
 
 calculate_btn.addEventListener('click', function(e){
@@ -18,6 +21,7 @@ calculate_btn.addEventListener('click', function(e){
     e.preventDefault();
     let income = income_inp.value;
     let day = days.value;
+    total_days.innerHTML = day;
     if(checkbox.checked){
         let no_tubercolosis = Number(income * 6) / 240;
         let deduction30 =  no_tubercolosis - (no_tubercolosis * 0.3);
@@ -30,6 +34,12 @@ calculate_btn.addEventListener('click', function(e){
             employer_compensation.innerHTML = (day_compensation * 4).toFixed(2);
         }
         employer_daily.innerHTML = dayCompensation;
+        final_price.innerHTML = ((day_compensation * Number(day - 3)).toFixed(2));
+        if(day > 240){
+            health_daily.innerHTML = '0,00';
+            employer_daily.innerHTML = '0,00';
+            final_price.innerHTML = '0.00';
+        }
         daysCalc(day);
     } else {
         let no_tubercolosis = Number(income * 6) / 182;
@@ -43,7 +53,13 @@ calculate_btn.addEventListener('click', function(e){
             employer_compensation.innerHTML = (day_compensation * 4).toFixed(2);
         }
         employer_daily.innerHTML = dayCompensation;
-        daysCalc(day);  
+        final_price.innerHTML = ((day_compensation * Number(day - 3)).toFixed(2));
+        if(day > 182){
+            health_daily.innerHTML = '0,00';
+            employer_daily.innerHTML = '0,00';
+            final_price.innerHTML = '0.00';
+        }
+        daysCalc(day);
     }
 
     function daysCalc(num){
@@ -51,6 +67,7 @@ calculate_btn.addEventListener('click', function(e){
             if(num <= 3){
                 health_daily.innerHTML = '0,00';
                 employer_daily.innerHTML = '0,00';
+                final_price.innerHTML = '0.00';
             }
             if(num >= 4 && num <= 240){
                 let days_count = num - 3;
@@ -80,6 +97,7 @@ calculate_btn.addEventListener('click', function(e){
             if(num <= 3){
                 health_daily.innerHTML = '0,00';
                 employer_daily.innerHTML = '0,00';
+                final_price.innerHTML = '0.00';
             }
             if(num >= 4 && num <= 182){
                 let days_count = num - 3;

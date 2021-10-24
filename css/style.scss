@@ -17,7 +17,8 @@ body {
     }
 }
 .container {
-    margin: 100px;
+    padding: 100px 0px;
+    margin: 0 100px; 
 }
 .descr {
     &-title {
@@ -264,6 +265,7 @@ body {
         justify-content: space-around;
     }
     .container {
+        padding: 0px;
         margin: 10px;
     }
     .descr {

@@ -81,6 +81,10 @@ body {
     width: 320px;
     color: $text-black;
     padding: 80px 0px;
+
+
+
+
     .employer-compensation, .health-compensation {
         display: inline;
     }
@@ -113,13 +117,61 @@ body {
         span {
             margin-bottom: 5px;
         }
-        input {
-            border-image-source: linear-gradient(90deg, #D3DAE8 0%, #A7B7D8 100%);
-            border-width: 2pt;
-            border-image-slice: 1;
+        .inp {
+            position: relative;
+            border: double 2.2px transparent;
+            border-radius: 4px;
+            background-image: linear-gradient(white, white), radial-gradient(circle at top left, #D3DAE8,#A7B7D8);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
             box-shadow: 0px 2px 4px 0px #0000001A;
+            padding: 1px;
+            b {
+                position: absolute;
+                right: 10px;
+                top: 15px; 
+            }
         }
+        input {
+            width: 100%;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding: 10px;
 
+
+            &::placeholder {
+                color: lightgrey;
+            }
+        }
+        input[type=checkbox] {
+            display: none;
+        }
+        label {
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            &::before {
+                content: '';
+                display: inline-block; 
+                width: 20px;
+                height: 20px;
+                border: double 2px transparent;
+                border-radius: 4px;
+                background-image: linear-gradient(white, white), radial-gradient(circle at top left, #D3DAE8,#A7B7D8);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                box-shadow: 0px 2px 4px 0px #0000001A;
+                vertical-align: middle;
+                margin-left: -20px;
+                margin-right: 10px;
+
+            }
+        }
+        input[type=checkbox]:checked + label::before {
+            content: (url(../img/check.svg));
+            display: flex;
+        }
         button {
             width: 169px;
             height: 60px;

@@ -13,6 +13,10 @@ body p, body ul {
   line-height: 30px;
 }
 
+body .mb20 {
+  margin-bottom: 20px;
+}
+
 .container {
   margin: 100px;
 }
@@ -82,6 +86,8 @@ body p, body ul {
   width: 320px;
   color: #111317;
   padding: 80px 0px;
+  -webkit-clip-path: polygon(5% 0, 95% 0, 100% 2%, 100% 98%, 95% 100%, 5% 100%, 0 98%, 0 2%);
+          clip-path: polygon(5% 0, 95% 0, 100% 2%, 100% 98%, 95% 100%, 5% 100%, 0 98%, 0 2%);
 }
 
 .calculator .employer-compensation, .calculator .health-compensation {
@@ -179,10 +185,13 @@ body p, body ul {
 
 .calculator form label {
   padding-left: 20px;
-  margin-top: 20px;
+  margin: 20px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .calculator form label::before {
@@ -219,10 +228,17 @@ body p, body ul {
   color: #FFFFFF;
   font-weight: bold;
   border: none;
+  text-shadow: 2px 2px #00000066;
 }
 
-.calculator form button span {
-  text-shadow: 2px 2px 0px 0px #00000066;
+.calculator form button:hover {
+  -webkit-box-shadow: 0px -4px 0px 0px #00000040 inset;
+          box-shadow: 0px -4px 0px 0px #00000040 inset;
+}
+
+.calculator form button:active {
+  -webkit-box-shadow: 0px 4px 0px 0px #00000040 inset;
+          box-shadow: 0px 4px 0px 0px #00000040 inset;
 }
 
 .calculator .compensations {

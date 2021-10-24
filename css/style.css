@@ -15,11 +15,6 @@ body .mb20 {
   margin-bottom: 20px;
 }
 
-.container {
-  padding: 100px 0px;
-  margin: 0 100px;
-}
-
 .descr-title {
   font-weight: 700;
   font-size: 40px;
@@ -320,6 +315,19 @@ body .mb20 {
 
 .calculator .total .final-price {
   display: inline;
+}
+
+@media screen and (max-width: 2560px) {
+  .container {
+    padding: 100px 0px;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .container {
+    padding: 100px 0px;
+    margin: 0 100px;
+  }
 }
 
 @media only screen and (max-width: 991px) {

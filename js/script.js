@@ -19,8 +19,10 @@ calculate_btn.addEventListener('click', function(e){
     let day_compensation = 0;
 
     if(income_inp.value == ''){
+        e.preventDefault();
         income_inp.classList.add('alert-danger');
     } else if (days.value == '') {
+        e.preventDefault();
         days.classList.add('alert-danger');
         income_inp.classList.remove('alert-danger');
     } else {

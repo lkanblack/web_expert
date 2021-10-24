@@ -246,6 +246,10 @@ body .mb20 {
           box-shadow: 0px 4px 0px 0px #00000040 inset;
 }
 
+.calculator form button:focus {
+  outline: none;
+}
+
 .calculator .compensations {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -172,6 +172,8 @@ body {
         input[type=checkbox]:checked + label::before {
             content: (url(../img/check.svg));
             display: flex;
+            justify-content: center;
+            align-items: center;
         }
         button {
             width: 169px;

@@ -20,7 +20,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-sm-12 col-md-6 col-lg-7">
                 <div class="descr">
                     <div class="descr-title">Quam Tristique Condimentum</div>
                     <p class="descr-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. <a href="#">Curabitur blandit</a> tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper.</p>
@@ -46,19 +46,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 d-flex justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-5 d-flex justify-content-center">
                 <div class="calculator">
                     <div class="calculator_block">
                         <h3>Compensation Calculator</h3>
                         <form>
                             <span>Average income</span>
                             <div class="inp mb20">
-                                <input type="text" name="" id="income" placeholder="1500">
+                                <input type="text" id="income" placeholder="1500"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                                 <b>€</b>
                             </div>
                             <span>Days on sick-leave</span>
                                 <div class="inp">
-                                    <input type="text" name="" id="days" placeholder="7">
+                                    <input type="text" id="days" placeholder="7"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
                                     <b>days</b>
                                 </div>
                             <div>

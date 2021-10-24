@@ -1,6 +1,4 @@
 body {
-  min-height: 100vh;
-  height: auto;
   background: -webkit-gradient(linear, left top, right top, from(#2B303A), to(#3F4756));
   background: linear-gradient(90deg, #2B303A 0%, #3F4756 100%);
   color: #FFFFFF;
@@ -88,6 +86,7 @@ body .mb20 {
   padding: 80px 0px;
   -webkit-clip-path: polygon(5% 0, 95% 0, 100% 2%, 100% 98%, 95% 100%, 5% 100%, 0 98%, 0 2%);
           clip-path: polygon(5% 0, 95% 0, 100% 2%, 100% 98%, 95% 100%, 5% 100%, 0 98%, 0 2%);
+  max-height: 790px;
 }
 
 .calculator .employer-compensation, .calculator .health-compensation {
@@ -310,5 +309,51 @@ body .mb20 {
 
 .calculator .total .final-price {
   display: inline;
+}
+
+@media only screen and (max-width: 991px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container {
+    margin: 10px;
+  }
+  .descr-title {
+    font-size: 32px;
+    line-height: 42px;
+  }
+  .descr-text {
+    font-size: 16px;
+  }
+  .descr_body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .descr_body h2 {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+  .descr_body-text p, .descr_body-text ul {
+    font-size: 16px;
+  }
+  .descr_body-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 20px;
+  }
+  .calculator {
+    min-width: 320px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

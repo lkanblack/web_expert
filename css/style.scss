@@ -4,8 +4,6 @@ $metal-grey:#E9EDF4;
 $dark-grey:#7A818E;
 
 body {
-    min-height: 100vh;
-    height: auto;
     background: linear-gradient(90deg, #2B303A 0%, #3F4756 100%);
     color: #FFFFFF;
     font-family: 'Sora', sans-serif;
@@ -85,6 +83,7 @@ body {
     color: $text-black;
     padding: 80px 0px;
     clip-path: polygon(5% 0, 95% 0, 100% 2%, 100% 98%, 95% 100%, 5% 100%, 0 98%, 0 2%);
+    max-height: 790px;
 
     .employer-compensation, .health-compensation {
         display: inline;
@@ -252,3 +251,44 @@ body {
         }
     }
 }
+
+@media only screen and (max-width: 991px) {
+   
+    body {
+        display: flex;
+        justify-content: space-around;
+    }
+    .container {
+        margin: 10px;
+    }
+    .descr {
+        &-title {
+            font-size: 32px;
+            line-height: 42px;
+        }
+        &-text {
+            font-size: 16px;
+        }
+        &_body {
+            flex-direction: column;
+            h2 {
+                font-size: 1.5rem;
+                line-height: 30px;
+            }
+            &-text {
+                p, ul {
+                    font-size: 16px;
+                }
+            }
+            &-img {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .calculator {
+        min-width: 320px;
+        margin-bottom: 20px;
+    }
+  }
